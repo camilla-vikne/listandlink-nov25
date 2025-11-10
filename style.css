@@ -88,15 +88,37 @@ article {
 }
 #ordered-list {
   border: 5px solid green;
+  height: 120px;
 }
 #unordered-list {
   border: 5px solid blue;
+  height: 180px;
 }
 #description-list {
   border: 5px solid red;
 }
 li {
   font-size: 20px;
+}
+#tomato {
+  list-style-image: url(./assets/tomato.png);
+  list-style-type: disc;
+}
+#beef {
+  list-style-image: url(./assets/beef-steak.png);
+  list-style-type: disc;
+}
+#cheese {
+  list-style-image: url(./assets/cheese.png);
+  list-style-type: disc;
+}
+#pasta {
+  list-style-image: url(./assets/pasta.png);
+  list-style-type: disc;
+}
+#milk {
+  list-style-image: url(./assets/milk.png);
+  list-style-type: disc;
 }
 ol li {
   list-style-type: upper-roman;
