@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Links and lists</title>
+    <title>About us</title>
   </head>
   <body>
     <header>
-      <h1>Home</h1>
+      <h1>About</h1>
       <nav>
         <ul>
           <li><a href="./index.html" title="Go to our home page">Home</a></li>
@@ -23,7 +23,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <!-- <main>
       <section>
         <article id="ordered-list">
           <p>Pack list:</p>
@@ -56,6 +56,18 @@
           </dl>
         </article>
       </section>
-    </main>
+    </main> -->
+    <button id="vibrateBtn">Click me!</button>
+
+    <script>
+      const btn = document.getElementById("vibrateBtn");
+
+      btn.addEventListener("click", () => {
+        // Check if the browser supports the API
+        if (navigator.vibrate) {
+          navigator.vibrate(50); // vibrate for 50 milliseconds
+        }
+      });
+    </script>
   </body>
 </html>
